@@ -68,7 +68,7 @@ for(let i=0; i<10; i++){
     let randomRadius = Math.floor(Math.random() * 100 + 15);//Tamaño
     let randomColor = '#' + Math.floor(Math.random()*16777215).toString(16); //Color aleatorio
 
-    let miCirculo=new Circle(randomX, randomY, randomRadius, randomColor, 'tec'+(i+1), 2);
+    let miCirculo=new Circle(randomX, randomY, randomRadius, randomColor, (i+1), 2);
     //Agrega el objeto al array 
     arrayCircle.push(miCirculo);
     arrayCircle[i].draw(ctx);
